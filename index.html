@@ -5,30 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Alura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
         <h1>Challenge Alura Latam</h1>
     </header>
     <main>
-        <section>
-            <div class="seccion-titulo">
-                <h2 class="titulo">Encriptador y desencriptador de texto</h2>
-            </div>
+        <div class="titulo">
+            <h2 class="subtitulo">Encriptador y desencriptador de texto</h2>
+        </div>
+        <section class="contenedor">
             <div class="tarjeta_encriptar">
                 <form class="form-encriptar">
                     <label for="texto_encriptar">Ingrese el texto</label>
                     <textarea name="texto_encriptar" id="texto_encriptar" cols="50" rows="5"></textarea>
-                    <button class="encriptar">Encriptar</button>
-                    <button class="desencriptar">Desencriptar</button>
-                    <button class="limpiar">Limpiar</button>
+                    <div class="botones">
+                        <button class="btn negro">Encriptar</button>
+                        <button class="btn gris">Desencriptar</button>
+                        <button class="btn rojo">Limpiar</button>
+                    </div>
                 </form>
             </div>
             <div class="tarjeta_cifrado">
                 <form class="form-encriptado">
                     <label for="texto_cifrado">Texto cifrado</label>
                     <textarea name="texto_cifrado" id="texto_cifrado" cols="50" rows="5"></textarea>
-                    <button class="copiar">Copiar</button>
+                    <div class="botones">
+                        <button class="btn negro">Copiar</button>
+                    </div>
                 </form>
             </div>
         </section>
