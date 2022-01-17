@@ -114,6 +114,9 @@ footer{
     position: fixed;
     width: 100%;
 }
+.footer-ciudad, .footer-derechos{
+    font-size: 12px;
+}
 
 /* Media query */
 @media (max-width: 420px) {
