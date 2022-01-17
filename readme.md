@@ -8,7 +8,7 @@ Tecnologias a utilizar
 * Javascript
 
 
-![Mockup del sitio](/img/mockup_site.png)
+![Mockup del sitio](https://raw.githubusercontent.com/jhoalparo1991/encriptador-desencriptador-texto/master/img/mockup_site.PNG)
 
 <https://www.linkedin.com/in/jhonatan-alberto-padilla-rovira-45b2b2b7/>
 
