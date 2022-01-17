@@ -22,8 +22,13 @@
         <section class="contenedor">
             <div class="tarjeta_encriptar">
                 <form class="form-encriptar">
+                    <span class="mensaje-error"></span>
                     <label for="texto_encriptar">Ingrese el texto</label>
                     <textarea name="texto_encriptar" id="texto_encriptar" cols="50" rows="5"></textarea>
+                    <b class="mensaje-error">
+                        Solo letras minusculas <br> No ingresar acentos <br> No ingresar numeros
+                    </b>
+                  
                     <div class="botones">
                         <button class="btn negro" id="encriptar">Encriptar</button>
                         <button class="btn gris" id="desencriptar">Desencriptar</button>

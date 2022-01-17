@@ -10,7 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Cancel refresh
     e.preventDefault();
 
-    let texto = textoEncriptar.value;
+    let texto = textoEncriptar.value.toLowerCase();
+    if(campo_vacio(texto)){
+      return;
+    }
+    console.log(texto);
     let data = texto.split("");
     let cifrado = "";
     let nuevoTexto = [];
@@ -30,5 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+  function campo_vacio(campo){
+    if(campo.length <=0 ){
+      error = document.querySelector('.mensaje-error');
+      error.textContent = "*Ingrese el texto";
+     setTimeout(()=>{
+      error.textContent = "";
+     },3000)
+      return true;
+    }
+    return false
+  }
   
 });

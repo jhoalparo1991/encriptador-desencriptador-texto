@@ -105,6 +105,15 @@ textarea{
     background: red;
 }
 
+/* Mensaje de error */
+.mensaje-error{
+    padding: 5px;
+    color: rgb(240, 127, 127) ;
+    display: block;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: left;
+}
 /* Footer */
 footer{
     background: black;

@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     let texto = textoEncriptar.value;
+    if (campo_vacio(texto)) {
+      return;
+    }
     let nuevoTexto = "";
 
     nuevoTexto = texto
@@ -19,9 +22,23 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/ai/g, "a")
       .replace(/ober/g, "o")
       .replace(/ufat/g, "u");
-    console.log(nuevoTexto);
-    textoCifrado.value = nuevoTexto;
+    console.log(nuevoTexto.toLowerCase());
+    textoCifrado.value = nuevoTexto.toLowerCase();
     //  Clear textarea
     textoEncriptar.value = "";
   }
+
+  function campo_vacio(campo) {
+    if (campo.length <= 0) {
+      error = document.querySelector(".mensaje-error");
+      error.textContent = "*Ingrese el texto";
+      setTimeout(() => {
+        error.textContent = "";
+      }, 3000);
+      return true;
+    }
+    return false;
+  }
+
+
 });
