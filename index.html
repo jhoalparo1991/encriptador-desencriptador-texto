@@ -25,7 +25,12 @@
                 <form class="form-encriptar">
                     <span class="mensaje-error"></span>
                     <label for="texto_encriptar">Ingrese el texto</label>
-                    <textarea name="texto_encriptar" id="texto_encriptar" cols="50" rows="5"></textarea>
+                    <textarea name="texto_encriptar" autocapitalize="off" id="texto_encriptar" 
+                    autocomplete="off"
+                    autofocus="on"
+                    required
+                    onkeypress="return validar_texto(event)"
+                    cols="50" rows="5"></textarea>
                    
                   
                     <div class="botones">
@@ -51,6 +56,7 @@
         <p class="footer-ciudad">Bgootá</p>
         <p class="footer-derechos">&copy; Copyright</p>
     </footer>
+    <script src="./js/validacion.js"></script>
     <script src="./js/clean.js"></script>
     <script src="./js/encriptar.js"></script>
     <script src="./js/desencriptar.js"></script>
