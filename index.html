@@ -20,14 +20,13 @@
             <h2 class="subtitulo">Encriptador y desencriptador de texto</h2>
         </div>
         <section class="contenedor">
+            
             <div class="tarjeta_encriptar">
                 <form class="form-encriptar">
                     <span class="mensaje-error"></span>
                     <label for="texto_encriptar">Ingrese el texto</label>
                     <textarea name="texto_encriptar" id="texto_encriptar" cols="50" rows="5"></textarea>
-                    <b class="mensaje-error">
-                        Solo letras minusculas <br> No ingresar acentos <br> No ingresar numeros
-                    </b>
+                   
                   
                     <div class="botones">
                         <button class="btn negro" id="encriptar">Encriptar</button>
@@ -39,9 +38,9 @@
             <div class="tarjeta_cifrado">
                 <form class="form-encriptado">
                     <label for="texto_cifrado">Texto cifrado</label>
-                    <textarea name="texto_cifrado" id="texto_cifrado" cols="50" rows="5"></textarea>
+                    <textarea name="texto_cifrado" id="texto_cifrado" cols="50" rows="5" disabled></textarea>
                     <div class="botones">
-                        <button class="btn negro" id="copiar">Copiar</button>
+                        <button class="btn negro" id="copiar">Copiar y Pegar</button>
                     </div>
                 </form>
             </div>

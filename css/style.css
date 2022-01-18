@@ -1,188 +1,190 @@
-*{
-
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    overflow-x: hidden;
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  overflow-x: hidden;
 }
 
 /*Section header */
-header{
-    align-items: center;
-    background-color: black;
-    display: flex;
-    height: 63px;
-    padding: 5px;
+header {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: 63px;
+  padding: 5px;
 }
 
-header h1{
-    color: white;
-    font-size: 25px;
-    margin: 0;
-    text-align: left;
-    text-transform: capitalize;
+header h1 {
+  color: white;
+  font-size: 25px;
+  margin: 0;
+  text-align: left;
+  text-transform: capitalize;
 }
 
 /* Section main */
 
-main{
-    background: #F9F9F9;
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 80%;
+main {
+  background: #f9f9f9;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80%;
+  box-shadow: 5px 5px 5px 5px gray;
 }
 
-.titulo{
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 63px;
+.titulo {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 63px;
 }
-.subtitulo{
-    margin: 0;
-    color: white;
-    text-transform: uppercase;
-}
-
-
-.contenedor{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    min-height: 200px;
-    margin-top: 40px;
-}
-.contenedor .tarjeta_encriptar, .contenedor .tarjeta_cifrado {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 48%;
-    margin-bottom: 40px;
+.subtitulo {
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
 }
 
-form{
-    width: 90%;
-    padding: 10px;
-    margin-left: 10px;
+.contenedor {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  min-height: 200px;
+  margin-top: 40px;
+}
+.contenedor .tarjeta_encriptar,
+.contenedor .tarjeta_cifrado {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 48%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 5px 0px 5px 0px gray;
 }
 
-label{
-    display: block;
-    margin: 5px;
+form {
+  width: 90%;
+  padding: 10px;
+  margin-left: 10px;
 }
 
-textarea{
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
-    width: 90%;
+label {
+  display: block;
+  margin: 5px;
 }
 
-.botones{
-    display: flex;
-    justify-content: left;
-    padding: 5px;
+textarea {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  width: 90%;
 }
 
-.btn{
-    border-radius: 10px;
-    border: none;
-    padding: 15px;
-    font-size: 1rem;
-    text-align: center;
-    color: #F9F9F9;
-    margin-left: 10px;
+.botones {
+  display: flex;
+  justify-content: left;
+  padding: 5px;
 }
 
-.negro{
-    background: black;
+.btn {
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  text-align: center;
+  color: #f9f9f9;
+  margin-left: 10px;
 }
 
-.gris{
-    background: #494A4A;
+.negro {
+  background: black;
 }
-.rojo{
-    background: red;
+
+.gris {
+  background: #494a4a;
+}
+.rojo {
+  background: red;
 }
 
 /* Mensaje de error */
-.mensaje-error{
-    padding: 5px;
-    color: rgb(240, 127, 127) ;
-    display: block;
-    border-radius: 10px;
-    font-size: 12px;
-    text-align: left;
+.mensaje-error {
+  padding: 5px;
+  color: rgb(240, 127, 127);
+  display: block;
+  border-radius: 10px;
+  font-size: 12px;
+  text-align: left;
 }
 /* Footer */
-footer{
-    background: black;
-    color: white;
-    text-align: center;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
-.footer-ciudad, .footer-derechos{
-    font-size: 12px;
+.footer-ciudad,
+.footer-derechos {
+  font-size: 12px;
 }
 
 /* Media query */
 @media (max-width: 420px) {
-    .contenedor .tarjeta_encriptar .botones{
-        display: block;
-    }
+  .contenedor .tarjeta_encriptar .botones {
+    display: block;
+  }
 
-    .botones .btn{
-        width: 90%;
-        margin-top: 5px;
-    }
-    footer{
-        position: relative;
-    }
-
+  .botones .btn {
+    width: 90%;
+    margin-top: 5px;
+  }
+  footer {
+    position: relative;
+  }
 }
 
 @media (max-width: 500px) {
-    .subtitulo{
-        font-size: 12px;
-    }
-    main{
-        width: 100%;
-        margin: 0;
-    }
-    form{
-        margin: 0;
-    }
-    .botones{
-        display: block;
-    }
-    footer{
-        position: relative;
-    }
-
+  .subtitulo {
+    font-size: 12px;
+  }
+  main {
+    width: 100%;
+    margin: 0;
+  }
+  form {
+    margin: 0;
+  }
+  .botones {
+    display: block;
+  }
+  footer {
+    position: relative;
+  }
 }
 @media (max-width: 1024px) {
-    .contenedor {
-      display: block;
-    }
-    .contenedor .tarjeta_encriptar, .contenedor .tarjeta_cifrado{
-        width: 100%;
-    }
-    form{
-        width: 100%;
-    }
-    textarea{
-        width: 90%;
-    }
-    .botones{
-        display: flex;
-        justify-content: flex-start;
-    }
-    .btn{
-        margin-left: 10px;
-    }
-    footer{
-        position: relative;
-    }
+  .contenedor {
+    display: block;
   }
+  .contenedor .tarjeta_encriptar,
+  .contenedor .tarjeta_cifrado {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+  textarea {
+    width: 90%;
+  }
+  .botones {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .btn {
+    margin-left: 10px;
+  }
+  footer {
+    position: relative;
+  }
+}
