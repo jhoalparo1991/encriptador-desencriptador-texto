@@ -12,50 +12,48 @@
 <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Challenge Alura Latam</h1>
-    </header>
-    <main>
-        <div class="titulo">
-            <h2 class="subtitulo">Encriptador y desencriptador de texto</h2>
-        </div>
-        <section class="contenedor">
-            
-            <div class="tarjeta_encriptar">
-                <form class="form-encriptar">
-                    <span class="mensaje-error"></span>
-                    <label for="texto_encriptar">Ingrese el texto</label>
-                    <textarea name="texto_encriptar" autocapitalize="off" id="texto_encriptar" 
-                    autocomplete="off"
-                    autofocus="on"
-                    required
-                    onkeypress="return validar_texto(event)"
-                    cols="50" rows="5"></textarea>
-                   
-                  
-                    <div class="botones">
-                        <button class="btn negro" id="encriptar">Encriptar</button>
-                        <button class="btn gris" id="desencriptar">Desencriptar</button>
-                        <button class="btn rojo" id="limpiar">Limpiar</button>
-                    </div>
-                </form>
+        <header>
+            <h1>Challenge Alura Latam</h1>
+        </header>
+        <main>
+            <div class="titulo">
+                <h2 class="subtitulo">Encriptador y desencriptador de texto</h2>
             </div>
-            <div class="tarjeta_cifrado">
-                <form class="form-encriptado">
-                    <label for="texto_cifrado">Texto cifrado</label>
-                    <textarea name="texto_cifrado" id="texto_cifrado" cols="50" rows="5" disabled></textarea>
-                    <div class="botones">
-                        <button class="btn negro" id="copiar">Copiar y Pegar</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p class="footer-autor">Jhonatan Alberto Padilla Rovira</p>
-        <p class="footer-ciudad">Bgootá</p>
-        <p class="footer-derechos">&copy; Copyright</p>
-    </footer>
+            <section class="contenedor">
+                
+                <div class="tarjeta_encriptar">
+                    <form class="form-encriptar">
+                        <span class="mensaje-error"></span>
+                        <label for="texto_encriptar">Ingrese el texto</label>
+                        <textarea name="texto_encriptar" autocapitalize="off" id="texto_encriptar" 
+                        autocomplete="off"
+                        autofocus="on"
+                        required
+                        onkeypress="return validar_texto(event)"
+                        cols="50" rows="5"></textarea>
+                        <div class="botones">
+                            <button class="btn negro" id="encriptar">Encriptar</button>
+                            <button class="btn gris" id="desencriptar">Desencriptar</button>
+                            <button class="btn rojo" id="limpiar">Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tarjeta_cifrado">
+                    <form class="form-encriptado">
+                        <label for="texto_cifrado">Texto cifrado</label>
+                        <textarea name="texto_cifrado" id="texto_cifrado" cols="50" rows="5" disabled></textarea>
+                        <div class="botones">
+                            <button class="btn negro" id="copiar">Copiar y Pegar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="footer-autor">Jhonatan Alberto Padilla Rovira</p>
+            <p class="footer-ciudad">Bgootá</p>
+            <p class="footer-derechos">&copy; Copyright</p>
+        </footer>
     <script src="./js/validacion.js"></script>
     <script src="./js/clean.js"></script>
     <script src="./js/encriptar.js"></script>
