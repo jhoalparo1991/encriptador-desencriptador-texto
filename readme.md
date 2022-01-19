@@ -7,8 +7,8 @@ Tecnologias a utilizar
 * Css
 * Javascript
 
-
-![Mockup del sitio](https://raw.githubusercontent.com/jhoalparo1991/encriptador-desencriptador-texto/master/img/mockup_site.PNG)
+![Vista web](https://raw.githubusercontent.com/jhoalparo1991/encriptador-desencriptador-texto/master/img/vista_web.PNG)
+![Vista movil](https://raw.githubusercontent.com/jhoalparo1991/encriptador-desencriptador-texto/master/img/vista_movil.PNG)
 
 <https://www.linkedin.com/in/jhonatan-alberto-padilla-rovira-45b2b2b7/>
 
