@@ -32,21 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/7/g, "")
       .replace(/8/g, "")
       .replace(/9/g, "");
-    console.log(nuevoTexto.toLowerCase());
+   
     textoCifrado.value = nuevoTexto.toLowerCase();
     //  Clear textarea
     textoEncriptar.value = "";
-  }
-
-  function campo_vacio(campo) {
-    if (campo.length <= 0) {
-      error = document.querySelector(".mensaje-error");
-      error.textContent = "*Ingrese el texto";
-      setTimeout(() => {
-        error.textContent = "";
-      }, 3000);
-      return true;
-    }
-    return false;
   }
 });
